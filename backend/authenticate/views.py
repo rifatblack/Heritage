@@ -63,17 +63,5 @@ def whoami_view(request):
 
     
 
-# @csrf_exempt
-# @login_required
-# def view_post(request):
-#     if request.method == "POST":
-        
-#         data = json.loads(request.body)
-#         username = data.get("username")
-#         password = data.get("password")
-#         print(f"Username: {username}, Password: {password}")
 
-#         return JsonResponse({"success": True, "message": "Post request processed."})
-
-#     return JsonResponse({"error": "Method not allowed."}, status=405)
 
