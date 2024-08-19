@@ -37,7 +37,7 @@ docker-compose up
 
 #### 4. Frontend Access the API at http://localhost:3000/
 
-#### 4. Backend Access the API at http://localhost:8001/
+#### 4. Backend Access the API at http://localhost:8001/admin
 
 ## Admin Credentials
 
