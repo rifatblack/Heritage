@@ -14,6 +14,10 @@ This is a property listing and bidding platform built using Django for the backe
 - **Django:** A high-level Python web framework for managing users, properties, bidding activities, and serving APIs.
 - **Django REST Framework:** (Optional) Used to create RESTful APIs that the React frontend interacts with.
 
+### Database
+
+- **SQLite:** A lightweight, file-based database used for storing application data.
+
 ## Installation
 
 #### 1. Clone the repository:
