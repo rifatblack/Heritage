@@ -41,14 +41,7 @@ export default function BuyerSearchResult() {
     setLoanAmount(parseInt(event.target.value));
   };
 
-  // const PropertyDetails = (id) => {
-
-  //   navigate(`/buyer/property`, { state: { id } });
-  // };
-
   const PropertyDetails = async (id) => {
-    // event.preventDefault();
-
     try {
       const response = await AxiosInstance.get(`heritage/properties/${id}/`);
 
@@ -383,12 +376,7 @@ export default function BuyerSearchResult() {
                 }%, #cbd5e1 100%)`,
               }}
             />
-            {/* <div
-            className="absolute -top-10 text-blue-700 font-semibold bg-white px-2 py-1 rounded-md shadow-lg"
-            style={{ left: getSliderPosition(loanAmount) }}
-          >
-            {loanAmount.toLocaleString()}
-          </div> */}
+
             <div className="flex justify-between text-sm text-gray-600">
               <p>$20k</p>
               <p>$30k</p>

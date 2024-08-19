@@ -13,12 +13,12 @@ import About from "./Components/about";
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [loading, setLoading] = useState(true); // Added loading state
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        const response = await getSession(); // Await the response
+        const response = await getSession();
         setIsAuthenticated(response.isAuthenticated);
         console.log(
           "Authenticated (check auth function):",
@@ -28,7 +28,7 @@ const App = () => {
         console.error("Error fetching session:", error);
         setIsAuthenticated(false);
       } finally {
-        setLoading(false); // Set loading to false after checking auth
+        setLoading(false);
       }
     };
 

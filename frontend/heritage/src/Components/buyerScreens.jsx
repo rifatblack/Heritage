@@ -20,16 +20,6 @@ export default function BuyerScreens() {
 
   const navigate = useNavigate();
 
-  // const handleSearch = (event) => {
-  //   event.preventDefault();
-  //   console.log("Searching for:", {
-  //     search,
-  //     location,
-  //     propertyType,
-  //     budget,
-  //   });
-  // };
-
   const handleSearch = async (event) => {
     event.preventDefault();
 

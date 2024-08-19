@@ -30,7 +30,7 @@ const LoginForm = ({ login }) => {
         if (response.status === 200) {
           login(true);
           console.log("Login successful");
-          navigate("/profile"); // Redirect to the home page or a protected route
+          navigate("/profile");
         } else {
           setError("Invalid username or password");
         }

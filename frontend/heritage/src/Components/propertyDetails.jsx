@@ -58,7 +58,6 @@ export default function PropertyDetails() {
           amount,
         }
       );
-      // console.log("Bid placed successfully:", response.data);
       setValidation(response.data.message);
     } catch (error) {
       const errorMessage = error.response?.data?.error || error.message;
@@ -181,10 +180,6 @@ export default function PropertyDetails() {
                   </label>
                 </div>
                 <div class="my-2 relative">
-                  {/* <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                    <p>$</p>
-                  </div> */}
-                  {/* ${formatToK(values[0])} */}
                   <input
                     type="search"
                     id="default-search"
@@ -192,8 +187,6 @@ export default function PropertyDetails() {
                     value={`$  ${formatToK(values[0])}`}
                     onChange={handleMinChange}
                     className="block w-full h-10 p-2 ps-4 text-sm text-gray-900 border border-white rounded"
-                    // placeholder="Search Porperties"
-                    // required
                   />
                 </div>
                 <div className="my-2 grid ">
@@ -202,9 +195,6 @@ export default function PropertyDetails() {
                   </label>
                 </div>
                 <div class="relative">
-                  {/* <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                    <p>$</p>
-                  </div> */}
                   <input
                     type="search"
                     id="default-search"
@@ -219,20 +209,6 @@ export default function PropertyDetails() {
               </div>
               <div className="relative mb-6">
                 <div className="relative w-full">
-                  {/* <div className="relative z-10 w-full h-2  rounded-lg dark:bg-gray-700">
-                    <div
-                      className="absolute h-2 rounded-lg"
-                      style={{
-                        background: getTrackBackground({
-                          values,
-                          colors: ["#3b82f6", "#cbd5e1"],
-                          min: minRange,
-                          max: maxRange,
-                        }),
-                      }}
-                    ></div>
-                  </div> */}
-
                   <Range
                     step={1}
                     min={minRange}
@@ -462,7 +438,6 @@ export default function PropertyDetails() {
                 </div>
               </div>
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 p-4">
-                {/* First Row */}
                 <div className="flex flex-col items-start p-2">
                   <p className="text-sm font-medium">Carpet Area</p>
                   <p className="text-md font-semibold">2000 sqft</p>
@@ -483,7 +458,6 @@ export default function PropertyDetails() {
                   <p className="text-md font-semibold">1</p>
                 </div>
 
-                {/* Second Row */}
                 <div className="flex flex-col items-start p-2">
                   <p className="text-sm font-medium">Facing</p>
                   <p className="text-md font-semibold">North-East</p>
